@@ -10,11 +10,13 @@ Welcome to my Linux portfolio! This repository showcases various hands-on projec
 
 - Apache Web Server Configuration – Setting up and securing a web server.
 
-- Automated Bash Scripting – Writing scripts for automation and system management.
-
 - Networking with Netplan – Transitioning from NetworkManager to Netplan in Ubuntu.
 
-**More projects coming soon!**
+- LVM Expansion Automation – Automating the process of adding new SSDs to LVM.
+
+- DMZ Interface Setup – Automating the configuration of a USB/RJ45 adapter for a DMZ network.
+
+More projects coming soon!
 
 ---
 🔧 Technologies Used
