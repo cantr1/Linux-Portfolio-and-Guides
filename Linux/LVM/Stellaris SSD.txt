@@ -1,0 +1,41 @@
+1.) Physically attach
+
+2.) Verify system sees it 
+		'lsblk'
+		
+3.) Partition the new disk to mirror the size of root partition on primary drive if needed
+		'sudo fdisk /dev/nmveX'
+		
+		a.) 'n' to create a new partition
+		b.) 'p' for primary
+		c.) Press enter to accept defaults
+				set end sector +1700G (*May be able to set more)
+		d.) 't' to change the partition type
+				- 8e
+				
+4.) Initialize the new disk for LVM
+		'sudo pvcreate /dev/nvme1n1'
+		
+5.) Add the new physical volume to the Volume Group
+		'vgdisplay' to check volume group --- should be vgubuntu
+		
+		Check that block sizes are correct:
+			sudo blockdev --getbsz /dev/nvme1n1
+			sudo blockdev --getbsz /dev/nvme0n1
+				
+		'sudo vgextend vgubuntu /dev/nvme1n1'
+		
+		If incorrect logical block sizes - allow mixed block sizes in /etc/lvm/lvm.conf
+				allow_mixed_block_sizes = 1
+		
+6.) Extend the logical volume
+		identify logical volume name 'lvdisplay'
+		
+		'sudo lvextend -l +100%FREE /dev/vgubuntu/root
+		
+7.) Resize the filesystem
+		lsblk -f = check filesystem type
+		
+		for ext4
+			'sudo resize2fs /dev/vgubuntu/root'
+		
