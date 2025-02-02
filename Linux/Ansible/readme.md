@@ -78,18 +78,12 @@ We are now approaching the finish line! The real bread and butter of Ansible is 
 Example Playbook
 ~~~
 - hosts: webservers
-
   become: yes
-
   tasks:
-  
     - name: Ensure Apache is installed
-    
       apt:
-      
         name: apache2
-        
-        state: present`
+        state: present
 ~~~
 
 ![RedHat](https://github.com/cantr1/Linux-Portfolio-and-Guides/blob/main/Linux/Ansible/Images/10.png)
