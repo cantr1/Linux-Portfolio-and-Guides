@@ -16,6 +16,8 @@ Welcome to my Linux portfolio! This repository showcases various hands-on projec
 
 - DMZ Interface Setup – Automating the configuration of a USB/RJ45 adapter for a DMZ network.
 
+- Tips - A collection of useful things I learn on the job!
+
 More projects coming soon!
 
 ---
