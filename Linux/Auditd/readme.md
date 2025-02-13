@@ -68,6 +68,12 @@ Explanation of flags:
 - p → Permissions (read, write, execute, attribute alteration)
 
 - k → Custom key (used for filtering logs)
+  
+- a always,exit → Always audit when the syscall exits (i.e., completes execution)
+  
+- F arch=b64 → Apply rule only to 64-bit architecture (b64)
+  
+- S execve → Monitor the execve system call, which is used to execute programs.
 
 **3. Reload All Rules**
 
