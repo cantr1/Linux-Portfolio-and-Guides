@@ -1,6 +1,10 @@
 # Linux Portfolio and Guides
 Welcome to my Linux portfolio! This repository showcases various hands-on projects I've worked on to deepen my understanding of Linux, system administration, networking, and automation. Each project includes documentation, commands used, and key takeaways.
 
+```
+I have also added some of my coding projects - just as an extra bit to document my learning!
+```
+
 ---
 📌 Projects Included
 
