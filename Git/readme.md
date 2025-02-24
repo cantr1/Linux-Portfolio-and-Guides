@@ -240,7 +240,8 @@ Remote repositories are copies of your project hosted on the internet or a netwo
 
 ### Getting Started with Remote Repositories
 You can start working with remote repositories by cloning an existing repository:
-`ygit clone https://github.com/username/repository-name`
+
+`git clone https://github.com/username/repository-name`
 
 ![Image](https://github.com/cantr1/Linux-Portfolio-and-Guides/blob/main/Git/Remote%20Repos/1.png)
 
